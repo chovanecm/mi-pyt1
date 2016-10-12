@@ -13,8 +13,7 @@ import twitter as tw
 @click.option("--lang", default=None, help="Tweets only in one specified language (cs, en, es...)")
 @click.argument("search")
 def read_twitter_wall(keys, search, tweet_count, refresh_time, lang):
-    api_key, api_secret = read_config(keys)
-    session = tw.twitter_session(api_key, api_secret)
+    session = get_session(keys)
     tweets = read_tweets(session, search, tweet_count, lang=lang)
     max_id = 0
     while True:
@@ -33,6 +32,11 @@ def read_config(keyfile):
     config = configparser.ConfigParser()
     config.read(keyfile)
     return config["twitter"]["api_key"], config["twitter"]["api_secret"]
+
+
+def get_session(key_file):
+    api_key, api_secret = read_config(key_file)
+    return tw.twitter_session(api_key, api_secret)
 
 
 def read_tweets(session, search, tweet_count=None, since_id=None, lang=None):
