@@ -28,9 +28,9 @@ def read_twitter_wall(keys, search, tweet_count, refresh_time, lang):
         print("Updated on %s" % str(time.localtime()))
 
 
-def read_config(keyfile):
+def read_config(key_file):
     config = configparser.ConfigParser()
-    config.read(keyfile)
+    config.read(key_file)
     return config["twitter"]["api_key"], config["twitter"]["api_secret"]
 
 
