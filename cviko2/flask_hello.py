@@ -20,7 +20,7 @@ def profile(username):
     return 'User {}'.format(username)
 
 
-@app.route("/ciao")
+@app.route("/ciao/")
 @app.route("/ciao/<user>")
 def ciao(user=None):
     return render_template("hello.html", name=user)
