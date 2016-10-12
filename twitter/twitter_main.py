@@ -4,15 +4,28 @@ import unittest
 
 import click
 import twitter as tw
+import twitter_web
 
 
-@click.command()
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.option("--keys", help="Config file with api keys for accessinig the Twitter API")
+def web(keys):
+    twitter_web.app.config["TW_CONFIG_FILE"] = keys
+    twitter_web.app.run(debug=True)
+
+
+@cli.command()
 @click.option("--keys", help="Config file with api keys for accessing the Twitter API.")
 @click.option("--tweet_count", default=3, help="Load this number of tweets")
 @click.option("--refresh_time", default=30, help="Refresh time (seconds)")
 @click.option("--lang", default=None, help="Tweets only in one specified language (cs, en, es...)")
 @click.argument("search")
-def read_twitter_wall(keys, search, tweet_count, refresh_time, lang):
+def console(keys, search, tweet_count, refresh_time, lang):
     session = get_session(keys)
     tweets = read_tweets(session, search, tweet_count, lang=lang)
     max_id = 0
@@ -64,4 +77,4 @@ def test():
 
 
 if __name__ == "__main__":
-    read_twitter_wall();
+    cli();
