@@ -5,11 +5,20 @@
     <title>Twitter wall</title>
 </head>
 <body>
-Search for: <input id="search"> <input type="button" value="Search">
-<ol>
+<form method="get" action="{{url_for('default')}}">
+    Search for: <input id="search" name="q" value="{{get_search_value()}}"> <input type="submit" value="Search">
+</form>
+<ul>
     {% for tweet in tweets %}
-        <li>{{tweet.text}}</li>
+    <li><img src="{{tweet.user.profile_image_url}}" alt="Profile image">{{tweet.text|entities(tweet.entities)}}
+        <div>
+            {% for media in tweet.entities.media %}
+            <a href="{{media.expanded_url}}"><<img src="{{media.media_url}}:thumb"></a>
+            {% endfor %}
+        </div>
+    </li>
+
     {% endfor %}
-</ol>
+</ul>
 </body>
 </html>
