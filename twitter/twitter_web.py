@@ -10,7 +10,7 @@ from markupsafe import Markup
 
 app = Flask(__name__)
 
-DEFAULT_SEARCH_VALUE = "python"
+DEFAULT_SEARCH_VALUE = "renfe"
 @app.route("/")
 def default():
     search = get_search_value()

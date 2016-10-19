@@ -3,7 +3,7 @@ import time
 import unittest
 
 import click
-import twitter as tw
+import my_twitter as tw
 import twitter_web
 
 
@@ -44,7 +44,7 @@ def console(keys, search, tweet_count, refresh_time, lang):
 def read_config(key_file):
     config = configparser.ConfigParser()
     config.read(key_file)
-    return config["twitter"]["api_key"], config["twitter"]["api_secret"]
+    return config.get("twitter", "api_key"), config.get("twitter","api_secret")
 
 
 def get_session(key_file):
