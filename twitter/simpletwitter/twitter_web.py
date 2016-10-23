@@ -5,17 +5,18 @@ from flask import render_template
 from flask import request
 import sys
 
-import twitter_main
+from . import twitter
 from markupsafe import Markup
 
 app = Flask(__name__)
-
 DEFAULT_SEARCH_VALUE = "python"
+
+
 @app.route("/")
 def default():
     search = get_search_value()
-    session = twitter_main.get_session(app.config["TW_CONFIG_FILE"])
-    tweets = twitter_main.read_tweets(session, search, tweet_count=None, since_id=None, lang=None)
+    session = twitter.get_session(app.config["TW_CONFIG_FILE"])
+    tweets = twitter.read_tweets_with_session(session, search, tweet_count=None, since_id=None, lang=None)
     return render_template("twitter.html", tweets=tweets, get_search_value=get_search_value)
 
 
@@ -67,7 +68,6 @@ def format_entity(text, prepend, append, entity, replace_text=None):
         # Insert something different instead of original entity text
         format_to = (text[:entity["indices"][0]], prepend, replace_text, append, text[entity["indices"][1]:])
     return ("%s%s%s%s%s") % format_to
-
 
 
 if __name__ == "__main__":
