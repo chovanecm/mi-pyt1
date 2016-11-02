@@ -1,8 +1,9 @@
 language: python
 python:
 - '3.5'
+before_script: cd twitter
+before_install: cd twitter
 install:
-- python twitter/setup.py install
+- python setup.py install
 script:
-- python twitter/setup.py test --addopts -v
-
+- python setup.py test --addopts -v
