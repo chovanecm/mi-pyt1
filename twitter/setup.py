@@ -32,5 +32,7 @@ setup(
         ]
     },
     install_requires=["Flask", "click>=6"],
-    version="0.2.2"
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
+    version="0.4"
 )

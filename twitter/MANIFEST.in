@@ -1,2 +1,5 @@
 include LICENSE
 recursive-include simpletwitter *.html
+recursive-include tests *
+
+

@@ -5,9 +5,12 @@ import requests
 from . import config
 
 
+def session_factory():
+    return requests.Session()
+
 def twitter_session(api_key, api_secret):
-    """Returns Twitter Session"""
-    session = requests.Session()
+    """Returns a Twitter Session"""
+    session = session_factory()
     secret = '{}:{}'.format(api_key, api_secret)
     secret64 = base64.b64encode(secret.encode('ascii')).decode('ascii')
 
@@ -46,3 +49,15 @@ def read_tweets_with_session(session, search, tweet_count=None, since_id=None, l
 def get_session(key_file):
     api_key, api_secret = config.read_config(key_file)
     return twitter_session(api_key, api_secret)
+
+
+def read_tweets(search, tweet_count=5, lang=None, session=None, api_key="", api_secret=""):
+    """Public function reading tweets.
+        Provide either a valid Twitter session or your Twitter api key and secret.
+
+        Returns the tweets and a session you can reuse
+        when calling the function the next time"""
+    if (session is None):
+        session = twitter_session(api_key, api_secret)
+    tweets = read_tweets_with_session(session, search, tweet_count=tweet_count, lang=lang)
+    return tweets, session

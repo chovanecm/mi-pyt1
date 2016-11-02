@@ -1,0 +1,31 @@
+{
+  "text": "We\u2019re excited to work closely with the external technical community and continue @twittereng\u2019s work with open source. cc @TwitterOSS",
+  "test_expected_output": "We\u2019re excited to work closely with the external technical community and continue <a href=\"http://twitter.com/TwitterEng\">@twittereng</a>\u2019s work with open source. cc <a href=\"http://twitter.com/TwitterOSS\">@TwitterOSS</a>",
+  "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "urls": [],
+    "user_mentions": [
+      {
+        "screen_name": "TwitterEng",
+        "name": "Twitter Engineering",
+        "id": 6844292,
+        "id_str": "6844292",
+        "indices": [
+          81,
+          92
+        ]
+      },
+      {
+        "screen_name": "TwitterOSS",
+        "name": "Twitter Open Source",
+        "id": 376825877,
+        "id_str": "376825877",
+        "indices": [
+          121,
+          132
+        ]
+      }
+    ]
+  }
+}

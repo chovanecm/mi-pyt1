@@ -1,4 +1,3 @@
-import configparser
 import time
 import unittest
 
@@ -44,16 +43,7 @@ def console(keys, search, tweet_count, refresh_time, lang):
         print("Updated on %s" % str(time.localtime()))
 
 
-def read_tweets(search, tweet_count=5, lang=None, session=None, api_key="", api_secret=""):
-    """Public function reading tweets.
-        Provide either a valid Twitter session or your Twitter api key and secret.
 
-        Returns the tweets and a session you can reuse
-        when calling the function the next time"""
-    if (session is None):
-        session = tw.twitter_session(api_key, api_secret)
-    tweets = tw.read_tweets_with_session(session, search, tweet_count=tweet_count, lang=lang)
-    return tweets, session
 
 
 class MyTest(unittest.TestCase):
@@ -68,4 +58,4 @@ def test():
 
 
 def main():
-    cli();
+    cli()

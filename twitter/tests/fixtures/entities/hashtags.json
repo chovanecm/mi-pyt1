@@ -1,0 +1,18 @@
+{
+  "text": "Loved #devnestSF",
+  "test_expected_output": "Loved <a href=\"/?q=%23devnestSF\">#devnestSF</a>",
+  "entities": {
+    "hashtags": [
+      {
+        "text": "devnestSF",
+        "indices": [
+          6,
+          16
+        ]
+      }
+    ],
+    "symbols": [],
+    "urls": [],
+    "user_mentions": []
+  }
+}
