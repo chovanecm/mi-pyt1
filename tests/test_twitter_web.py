@@ -3,10 +3,11 @@ import os
 
 import betamax
 import pytest
-import simpletwitter.twitter as tw_api
-import simpletwitter.twitter_web as tw
 from betamax.cassette import cassette
 from markupsafe import Markup
+
+import simpletwitter.twitter as tw_api
+import simpletwitter.twitter_web as tw
 
 directory = os.path.dirname(os.path.realpath(__file__))
 

@@ -1,0 +1,14 @@
+twitter_private.ini
+.idea/
+.pypirc
+.cache/
+.eggs/
+.tox/
+__pycache__/
+dist/
+build/
+simpletwitter.egg-info/
+simpletwitter/__pycache__/
+tests/__pycache__/
+docs/_static/
+twitter/

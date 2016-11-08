@@ -1,12 +1,10 @@
 from flask import Flask
-from flask import url_for
-
 from flask import render_template
 from flask import request
-import sys
+from flask import url_for
+from markupsafe import Markup
 
 from . import twitter
-from markupsafe import Markup
 
 app = Flask(__name__)
 DEFAULT_SEARCH_VALUE = "python"

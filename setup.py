@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('README') as f:
+with open('README.rst') as f:
     long_description = ''.join(f.readlines())
 
 setup(
@@ -31,7 +31,7 @@ setup(
             "simpletwitter = simpletwitter.twitter_main:main"
         ]
     },
-    install_requires=["Flask", "click>=6"],
+    install_requires=["Flask", "click>=6", "requests"],
     setup_requires=["pytest-runner"],
     tests_require=["pytest", "betamax"],
     version="0.4"

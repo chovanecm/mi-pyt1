@@ -1,0 +1,434 @@
+{
+  "statuses": [
+    {
+      "contributors": None,
+      "coordinates": None,
+      "created_at": "Wed Oct 05 10:09:16 +0000 2016",
+      "entities": {
+        "hashtags": [
+          {
+            "indices": [
+              0,
+              11
+            ],
+            "text": "JavaScript"
+          },
+          {
+            "indices": [
+              13,
+              20
+            ],
+            "text": "Python"
+          }
+        ],
+        "media": [
+          {
+            "display_url": "pic.twitter.com/to0WmT6p0Q",
+            "expanded_url": "https://twitter.com/samm_emmanuel/status/783609987801223168/photo/1",
+            "id": 783609985838280705,
+            "id_str": "783609985838280705",
+            "indices": [
+              114,
+              137
+            ],
+            "media_url": "http://pbs.twimg.com/media/Ct_xIWBW8AEN1k1.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/Ct_xIWBW8AEN1k1.jpg",
+            "sizes": {
+              "large": {
+                "h": 507,
+                "resize": "fit",
+                "w": 900
+              },
+              "medium": {
+                "h": 507,
+                "resize": "fit",
+                "w": 900
+              },
+              "small": {
+                "h": 383,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "source_status_id": 783609987801223168,
+            "source_status_id_str": "783609987801223168",
+            "source_user_id": 2892559686,
+            "source_user_id_str": "2892559686",
+            "type": "photo",
+            "url": "https://t.co/to0WmT6p0Q"
+          }
+        ],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "fossbytes.com/google-wifi-ne…",
+            "expanded_url": "https://fossbytes.com/google-wifi-new-router-promises-fix-crappy-internet/",
+            "indices": [
+              90,
+              113
+            ],
+            "url": "https://t.co/90wvEMJqVT"
+          }
+        ],
+        "user_mentions": []
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "display_url": "pic.twitter.com/to0WmT6p0Q",
+            "expanded_url": "https://twitter.com/samm_emmanuel/status/783609987801223168/photo/1",
+            "id": 783609985838280705,
+            "id_str": "783609985838280705",
+            "indices": [
+              114,
+              137
+            ],
+            "media_url": "http://pbs.twimg.com/media/Ct_xIWBW8AEN1k1.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/Ct_xIWBW8AEN1k1.jpg",
+            "sizes": {
+              "large": {
+                "h": 507,
+                "resize": "fit",
+                "w": 900
+              },
+              "medium": {
+                "h": 507,
+                "resize": "fit",
+                "w": 900
+              },
+              "small": {
+                "h": 383,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "source_status_id": 783609987801223168,
+            "source_status_id_str": "783609987801223168",
+            "source_user_id": 2892559686,
+            "source_user_id_str": "2892559686",
+            "type": "photo",
+            "url": "https://t.co/to0WmT6p0Q"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": False,
+      "geo": None,
+      "id": 783609997171261440,
+      "id_str": "783609997171261440",
+      "in_reply_to_screen_name": None,
+      "in_reply_to_status_id": None,
+      "in_reply_to_status_id_str": None,
+      "in_reply_to_user_id": None,
+      "in_reply_to_user_id_str": None,
+      "is_quote_status": False,
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": None,
+      "possibly_sensitive": False,
+      "retweet_count": 0,
+      "retweeted": False,
+      "source": "<a href="
+      http: //ifttt.com" rel="nofollow">IFTTT</a>",
+      "text"
+      :
+      "#JavaScript, #Python Google Wifi — A New Router That Promises To Fix Your Crappy Internet https://t.co/90wvEMJqVT https://t.co/to0WmT6p0Q",
+      "truncated": False,
+      "user": {
+        "contributors_enabled": False,
+        "created_at": "Thu Aug 11 01:59:09 +0000 2016",
+        "default_profile": False,
+        "default_profile_image": False,
+        "description": "following me to get everything you need for offline programming language #JavaScript, #Python #developer #languages #webdev #code #HTML",
+        "entities": {
+          "description": {
+            "urls": []
+          },
+          "url": {
+            "urls": [
+              {
+                "display_url": "4unow.net/freegifts",
+                "expanded_url": "http://4unow.net/freegifts",
+                "indices": [
+                  0,
+                  23
+                ],
+                "url": "https://t.co/6tMm1XsiAa"
+              }
+            ]
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": None,
+        "followers_count": 60,
+        "following": None,
+        "friends_count": 29,
+        "geo_enabled": False,
+        "has_extended_profile": False,
+        "id": 763555319142244352,
+        "id_str": "763555319142244352",
+        "is_translation_enabled": False,
+        "is_translator": False,
+        "lang": "en-gb",
+        "listed_count": 165,
+        "location": "United States",
+        "name": "Pro_Languages1s",
+        "notifications": None,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": False,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/763555319142244352/1470881213",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/763557421780389889/r0zKe25f_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/763557421780389889/r0zKe25f_normal.jpg",
+        "profile_link_color": "981CEB",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": False,
+        "protected": False,
+        "screen_name": "Pro_Languages1s",
+        "statuses_count": 3058,
+        "time_zone": "Pacific Time (US & Canada)",
+        "url": "https://t.co/6tMm1XsiAa",
+        "utc_offset": -25200,
+        "verified": False
+      }
+    },
+    {
+      "contributors": None,
+      "coordinates": None,
+      "created_at": "Wed Oct 05 10:09:16 +0000 2016",
+      "entities": {
+        "hashtags": [
+          {
+            "indices": [
+              0,
+              11
+            ],
+            "text": "JavaScript"
+          },
+          {
+            "indices": [
+              13,
+              20
+            ],
+            "text": "Python"
+          },
+          {
+            "indices": [
+              83,
+              87
+            ],
+            "text": "seo"
+          },
+          {
+            "indices": [
+              88,
+              96
+            ],
+            "text": "hubspot"
+          }
+        ],
+        "media": [
+          {
+            "display_url": "pic.twitter.com/oKmyzEG0S6",
+            "expanded_url": "https://twitter.com/samm_emmanuel/status/783609000361418753/photo/1",
+            "id": 783608998436143104,
+            "id_str": "783608998436143104",
+            "indices": [
+              97,
+              120
+            ],
+            "media_url": "http://pbs.twimg.com/media/Ct_wO3qWAAAb6tx.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/Ct_wO3qWAAAb6tx.jpg",
+            "sizes": {
+              "large": {
+                "h": 315,
+                "resize": "fit",
+                "w": 761
+              },
+              "medium": {
+                "h": 315,
+                "resize": "fit",
+                "w": 761
+              },
+              "small": {
+                "h": 281,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "source_status_id": 783609000361418753,
+            "source_status_id_str": "783609000361418753",
+            "source_user_id": 2892559686,
+            "source_user_id_str": "2892559686",
+            "type": "photo",
+            "url": "https://t.co/oKmyzEG0S6"
+          }
+        ],
+        "symbols": [],
+        "urls": [
+          {
+            "display_url": "blog.hubspot.com/marketing/peer…",
+            "expanded_url": "http://blog.hubspot.com/marketing/peer-feedback-tips",
+            "indices": [
+              59,
+              82
+            ],
+            "url": "https://t.co/F6xs9cjlRC"
+          }
+        ],
+        "user_mentions": []
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "display_url": "pic.twitter.com/oKmyzEG0S6",
+            "expanded_url": "https://twitter.com/samm_emmanuel/status/783609000361418753/photo/1",
+            "id": 783608998436143104,
+            "id_str": "783608998436143104",
+            "indices": [
+              97,
+              120
+            ],
+            "media_url": "http://pbs.twimg.com/media/Ct_wO3qWAAAb6tx.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/Ct_wO3qWAAAb6tx.jpg",
+            "sizes": {
+              "large": {
+                "h": 315,
+                "resize": "fit",
+                "w": 761
+              },
+              "medium": {
+                "h": 315,
+                "resize": "fit",
+                "w": 761
+              },
+              "small": {
+                "h": 281,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "source_status_id": 783609000361418753,
+            "source_status_id_str": "783609000361418753",
+            "source_user_id": 2892559686,
+            "source_user_id_str": "2892559686",
+            "type": "photo",
+            "url": "https://t.co/oKmyzEG0S6"
+          }
+        ]
+      },
+      "favorite_count": 0,
+      "favorited": False,
+      "geo": None,
+      "id": 783609994948308993,
+      "id_str": "783609994948308993",
+      "in_reply_to_screen_name": None,
+      "in_reply_to_status_id": None,
+      "in_reply_to_status_id_str": None,
+      "in_reply_to_user_id": None,
+      "in_reply_to_user_id_str": None,
+      "is_quote_status": False,
+      "lang": "en",
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "place": None,
+      "possibly_sensitive": False,
+      "retweet_count": 0,
+      "retweeted": False,
+      "source": "<a href="
+      http: //ifttt.com" rel="nofollow">IFTTT</a>",
+      "text"
+      :
+      "#JavaScript, #Python 8 Tips for Giving Great Peer Feedback https://t.co/F6xs9cjlRC #seo #hubspot https://t.co/oKmyzEG0S6",
+      "truncated": False,
+      "user": {
+        "contributors_enabled": False,
+        "created_at": "Thu Aug 11 01:59:09 +0000 2016",
+        "default_profile": False,
+        "default_profile_image": False,
+        "description": "following me to get everything you need for offline programming language #JavaScript, #Python #developer #languages #webdev #code #HTML",
+        "entities": {
+          "description": {
+            "urls": []
+          },
+          "url": {
+            "urls": [
+              {
+                "display_url": "4unow.net/freegifts",
+                "expanded_url": "http://4unow.net/freegifts",
+                "indices": [
+                  0,
+                  23
+                ],
+                "url": "https://t.co/6tMm1XsiAa"
+              }
+            ]
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": None,
+        "followers_count": 60,
+        "following": None,
+        "friends_count": 29,
+        "geo_enabled": False,
+        "has_extended_profile": False,
+        "id": 763555319142244352,
+        "id_str": "763555319142244352",
+        "is_translation_enabled": False,
+        "is_translator": False,
+        "lang": "en-gb",
+        "listed_count": 165,
+        "location": "United States",
+        "name": "Pro_Languages1s",
+        "notifications": None,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": False,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/763555319142244352/1470881213",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/763557421780389889/r0zKe25f_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/763557421780389889/r0zKe25f_normal.jpg",
+        "profile_link_color": "981CEB",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": False,
+        "protected": False,
+        "screen_name": "Pro_Languages1s",
+        "statuses_count": 3058,
+        "time_zone": "Pacific Time (US & Canada)",
+        "url": "https://t.co/6tMm1XsiAa",
+        "utc_offset": -25200,
+        "verified": False
+      }
+    }
+  ]
+}

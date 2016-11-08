@@ -52,11 +52,22 @@ def get_session(key_file):
 
 
 def read_tweets(search, tweet_count=5, lang=None, session=None, api_key="", api_secret=""):
-    """Public function reading tweets.
-        Provide either a valid Twitter session or your Twitter api key and secret.
+    """
+    Read tweets matching given criteria.
 
-        Returns the tweets and a session you can reuse
-        when calling the function the next time"""
+    Search for tweets in specified language, provided your api_key and api_secret tokens.
+
+    :param search: The string you want to search for
+    :param tweet_count: The maximum number of tweets returned.
+    :param lang: The language you want to filter (only one supported). Use the ISO language codes like cs, en
+    :param session: If you already have a session returned from a previous call of the function, you can reuse it to prevent handshaking again
+    :param api_key: API key retrieved from Twitter
+    :param api_secret: API secret retrieved from Twitter
+    :return: Returns tuple (tweets, session). Tweets is a dictionary with structure specified in the `Twitter API documentation`_, session is just an object you can pass next time to the function to save some resources.
+
+    .. _`Twitter API documentation`: https://dev.twitter.com/overview/api/tweets
+
+    """
     if (session is None):
         session = twitter_session(api_key, api_secret)
     tweets = read_tweets_with_session(session, search, tweet_count=tweet_count, lang=lang)
