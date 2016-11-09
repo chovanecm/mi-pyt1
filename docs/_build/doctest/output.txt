@@ -1,0 +1,20 @@
+Results of doctest builder run on 2016-11-09 09:47:04
+=====================================================
+
+Document: index
+---------------
+4 items passed all tests:
+   1 tests in api_key="blabla"
+   1 tests in api_secret="huhuhu"))
+   1 tests in len(simpletwitter.read_tweets("python"
+   1 tests in tweet_count=2
+4 tests in 4 items.
+4 passed and 0 failed.
+Test passed.
+
+Doctest summary
+===============
+    4 tests
+    0 failures in tests
+    0 failures in setup code
+    0 failures in cleanup code

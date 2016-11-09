@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome to SimpleTwitter’s documentation! &mdash; SimpleTwitter 0.5 documentation</title>
+
+
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css"/>
+
+
+    <link rel="index" title="Index"
+          href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SimpleTwitter 0.5 documentation" href="#"/>
+
+
+    <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+<div class="wy-grid-for-nav">
+
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+            <div class="wy-side-nav-search">
+
+
+                <a href="#" class="icon icon-home"> SimpleTwitter
+
+
+                </a>
+
+
+                <div class="version">
+                    0.5
+                </div>
+
+
+                <div role="search">
+                    <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+                        <input type="text" name="q" placeholder="Search docs"/>
+                        <input type="hidden" name="check_keywords" value="yes"/>
+                        <input type="hidden" name="area" value="default"/>
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+                <!-- Local TOC -->
+                <div class="local-toc">
+                    <ul>
+                        <li><a class="reference internal" href="#">Welcome to SimpleTwitter&#8217;s documentation!</a>
+                            <ul>
+                                <li><a class="reference internal" href="#what-is-simpletwitter">What is
+                                    SimpleTwitter</a></li>
+                                <li><a class="reference internal" href="#requirements-and-installation">Requirements and
+                                    Installation</a></li>
+                                <li><a class="reference internal" href="#obtaining-twitter-api-keys">Obtaining Twitter
+                                    API keys</a></li>
+                                <li><a class="reference internal" href="#running-the-application">Running the
+                                    Application</a>
+                                    <ul>
+                                        <li><a class="reference internal" href="#as-a-console-application">As a Console
+                                            Application</a></li>
+                                        <li><a class="reference internal" href="#as-a-web-application">As a Web
+                                            Application</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="reference internal" href="#api-documentation">API Documentation</a></li>
+                                <li><a class="reference internal" href="#examples">Examples</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+            <a href="#">SimpleTwitter</a>
+        </nav>
+
+
+        <div class="wy-nav-content">
+            <div class="rst-content">
+
+
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <ul class="wy-breadcrumbs">
+                        <li><a href="#">Docs</a> &raquo;</li>
+
+                        <li>Welcome to SimpleTwitter&#8217;s documentation!</li>
+                        <li class="wy-breadcrumbs-aside">
+
+
+                            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+
+
+                        </li>
+                    </ul>
+                    <hr/>
+                </div>
+                <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                    <div itemprop="articleBody">
+
+                        <div class="section" id="welcome-to-simpletwitter-s-documentation">
+                            <h1>Welcome to SimpleTwitter&#8217;s documentation!<a class="headerlink"
+                                                                                  href="#welcome-to-simpletwitter-s-documentation"
+                                                                                  title="Permalink to this headline">¶</a>
+                            </h1>
+                            <p>Contents:</p>
+                            <div class="contents local topic" id="contents">
+                                <ul class="simple">
+                                    <li><a class="reference internal" href="#what-is-simpletwitter" id="id1">What is
+                                        SimpleTwitter</a></li>
+                                    <li><a class="reference internal" href="#requirements-and-installation" id="id2">Requirements
+                                        and Installation</a></li>
+                                    <li><a class="reference internal" href="#obtaining-twitter-api-keys" id="id3">Obtaining
+                                        Twitter API keys</a></li>
+                                    <li><a class="reference internal" href="#running-the-application" id="id4">Running
+                                        the Application</a>
+                                        <ul>
+                                            <li><a class="reference internal" href="#as-a-console-application" id="id5">As
+                                                a Console Application</a></li>
+                                            <li><a class="reference internal" href="#as-a-web-application" id="id6">As a
+                                                Web Application</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="reference internal" href="#api-documentation" id="id7">API
+                                        Documentation</a></li>
+                                    <li><a class="reference internal" href="#examples" id="id8">Examples</a></li>
+                                </ul>
+                            </div>
+                            <div class="section" id="what-is-simpletwitter">
+                                <h2><a class="toc-backref" href="#id1">What is SimpleTwitter</a><a class="headerlink"
+                                                                                                   href="#what-is-simpletwitter"
+                                                                                                   title="Permalink to this headline">¶</a>
+                                </h2>
+                                <p>SimpleTwitter is a console application, a web application and a library for searching
+                                    for recent tweets.
+                                    It displays the most recent tweets matching your search query. In console mode, it
+                                    refreshes periodically with new
+                                    tweets.</p>
+                            </div>
+                            <div class="section" id="requirements-and-installation">
+                                <h2><a class="toc-backref" href="#id2">Requirements and Installation</a><a
+                                        class="headerlink" href="#requirements-and-installation"
+                                        title="Permalink to this headline">¶</a></h2>
+                                <p>SimpleTwitter requires some additional packages, namely Flask, requests and click.
+                                    These should be installed
+                                    automatically together with the package. Before using the application, you need to
+                                    configure it with your Twitter API
+                                    key and secret. See <a class="reference internal" href="#api-keys"><span
+                                            class="std std-ref">Obtaining Twitter API keys</span></a> for more
+                                    information.</p>
+                                <p>Install the application using Test PyPi:</p>
+                                <p><code class="docutils literal"><span class="pre">pip</span> <span
+                                        class="pre">install</span> <span class="pre">-i</span> <span class="pre">https://testpypi.python.org/pypi</span>
+                                    <span class="pre">--extra-index-url</span> <span class="pre">https://pypi.python.org/pypi</span>
+                                    <span class="pre">simpletwitter</span></code></p>
+                            </div>
+                            <div class="section" id="obtaining-twitter-api-keys">
+                                <span id="api-keys"></span>
+                                <h2><a class="toc-backref" href="#id3">Obtaining Twitter API keys</a><a
+                                        class="headerlink" href="#obtaining-twitter-api-keys"
+                                        title="Permalink to this headline">¶</a></h2>
+                                <p>In order to use the application, providing your personal API key and API secret is
+                                    necessary. This manual assumes you
+                                    have a valid Twitter account at disposal.</p>
+                                <ol class="arabic simple">
+                                    <li>Navigate to <a class="reference external" href="http://apps.twitter.com/">apps.twitter.com</a>
+                                    </li>
+                                    <li>Click &#8220;Create New App&#8221;</li>
+                                    <li>Fill in arbitrary name that nobody else uses (make something up), description
+                                        and a URL (anything except of example.org) You don&#8217;t have to fill the
+                                        callback URL
+                                    </li>
+                                    <li>Take your Consumer API key and Consumer Secret from the Keys and Token Access
+                                        tab.
+                                    </li>
+                                    <li>Place the keys in the following format to an ini file where no unauthorised
+                                        person can access it. Keep in mind: your API key is like your password.
+                                    </li>
+                                </ol>
+                                <p>Example <code class="docutils literal"><span
+                                        class="pre">twitter_keys.ini</span></code>:</p>
+                                <div class="highlight-default">
+                                    <div class="highlight"><pre><span></span><span class="p">[</span><span class="n">twitter</span><span
+                                            class="p">]</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="n">YOUR_KEY_HERE</span>
+<span class="n">api_secret</span> <span class="o">=</span> <span class="n">YOUR_SECRET_HERE</span>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section" id="running-the-application">
+                                <h2><a class="toc-backref" href="#id4">Running the Application</a><a class="headerlink"
+                                                                                                     href="#running-the-application"
+                                                                                                     title="Permalink to this headline">¶</a>
+                                </h2>
+                                <div class="section" id="as-a-console-application">
+                                    <h3><a class="toc-backref" href="#id5">As a Console Application</a><a
+                                            class="headerlink" href="#as-a-console-application"
+                                            title="Permalink to this headline">¶</a></h3>
+                                    <p>Run</p>
+                                    <p><code class="docutils literal"><span class="pre">simpletwitter</span> <span
+                                            class="pre">console</span> <span class="pre">--keys</span> <span
+                                            class="pre">twitter_keys.ini</span> <span
+                                            class="pre">konvalinka</span></code></p>
+                                    <p>to get latest tweets from the world of flora (and fauna in the Prague area).
+                                        To restrict keys for certain language, use e.g.</p>
+                                    <p><code class="docutils literal"><span class="pre">simpletwitter</span> <span
+                                            class="pre">console</span> <span class="pre">--keys</span> <span
+                                            class="pre">twitter_keys.ini</span> <span class="pre">--lang</span> <span
+                                            class="pre">cs</span> <span class="pre">konvalinka</span></code></p>
+                                    <p>The language code should follow the ISO standards.</p>
+                                    <p>You can also specify how many tweets to return or how often to check for new
+                                        tweets (using <code class="docutils literal"><span
+                                                class="pre">--tweet_count</span></code> and
+                                        <code class="docutils literal"><span class="pre">--refresh_time</span></code>,
+                                        respectively). The refresh time takes integers (seconds) as an argument.</p>
+                                </div>
+                                <div class="section" id="as-a-web-application">
+                                    <h3><a class="toc-backref" href="#id6">As a Web Application</a><a class="headerlink"
+                                                                                                      href="#as-a-web-application"
+                                                                                                      title="Permalink to this headline">¶</a>
+                                    </h3>
+                                    <p>Run</p>
+                                    <p><code class="docutils literal"><span class="pre">simpletwitter</span> <span
+                                            class="pre">web</span> <span class="pre">--keys</span> <span class="pre">twitter_keys.ini</span></code>
+                                    </p>
+                                    <p>This will start the server bundled with Flask.
+                                        You should see something like</p>
+                                    <p><code class="docutils literal"><span class="pre">*</span> <span class="pre">Running</span>
+                                        <span class="pre">on</span> <span class="pre">http://127.0.0.1:5000/</span>
+                                        <span class="pre">(Press</span> <span class="pre">CTRL+C</span> <span
+                                                class="pre">to</span> <span class="pre">quit]</span></code></p>
+                                    <p>Open the address and voilà, you are there.
+                                        The user interface is simple, but powerful (haha). This allows you to search for
+                                        tweets quickly.</p>
+                                </div>
+                            </div>
+                            <div class="section" id="api-documentation">
+                                <h2><a class="toc-backref" href="#id7">API Documentation</a><a class="headerlink"
+                                                                                               href="#api-documentation"
+                                                                                               title="Permalink to this headline">¶</a>
+                                </h2>
+                                <p>The following part documents the public API of the application:</p>
+                                <span class="target" id="module-simpletwitter"></span>
+                                <dl class="function">
+                                    <dt id="simpletwitter.read_tweets">
+                                        <code class="descclassname">simpletwitter.</code><code class="descname">read_tweets</code><span
+                                            class="sig-paren">(</span><em>search</em>, <em>tweet_count=5</em>, <em>lang=None</em>,
+                                        <em>session=None</em>, <em>api_key=''</em>, <em>api_secret=''</em><span
+                                            class="sig-paren">)</span><a class="headerlink"
+                                                                         href="#simpletwitter.read_tweets"
+                                                                         title="Permalink to this definition">¶</a></dt>
+                                    <dd><p>Read tweets matching given criteria.</p>
+                                        <p>Search for tweets in specified language, provided your api_key and api_secret
+                                            tokens.</p>
+                                        <table class="docutils field-list" frame="void" rules="none">
+                                            <col class="field-name"/>
+                                            <col class="field-body"/>
+                                            <tbody valign="top">
+                                            <tr class="field-odd field">
+                                                <th class="field-name">Parameters:</th>
+                                                <td class="field-body">
+                                                    <ul class="first simple">
+                                                        <li><strong>search</strong> &#8211; The string you want to
+                                                            search for
+                                                        </li>
+                                                        <li><strong>tweet_count</strong> &#8211; The maximum number of
+                                                            tweets returned.
+                                                        </li>
+                                                        <li><strong>lang</strong> &#8211; The language you want to
+                                                            filter (only one supported). Use the ISO language codes like
+                                                            cs, en
+                                                        </li>
+                                                        <li><strong>session</strong> &#8211; If you already have a
+                                                            session returned from a previous call of the function, you
+                                                            can reuse it to prevent handshaking again
+                                                        </li>
+                                                        <li><strong>api_key</strong> &#8211; API key retrieved from
+                                                            Twitter
+                                                        </li>
+                                                        <li><strong>api_secret</strong> &#8211; API secret retrieved
+                                                            from Twitter
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr class="field-even field">
+                                                <th class="field-name">Returns:</th>
+                                                <td class="field-body"><p class="first last">Returns tuple (tweets,
+                                                    session). Tweets is a dictionary with structure specified in the <a
+                                                            class="reference external"
+                                                            href="https://dev.twitter.com/overview/api/tweets">Twitter
+                                                        API documentation</a>, session is just an object you can pass
+                                                    next time to the function to save some resources.</p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </dd>
+                                </dl>
+
+                            </div>
+                            <div class="section" id="examples">
+                                <h2><a class="toc-backref" href="#id8">Examples</a><a class="headerlink"
+                                                                                      href="#examples"
+                                                                                      title="Permalink to this headline">¶</a>
+                                </h2>
+                                <div class="highlight-default">
+                                    <div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span
+                                            class="nb">len</span><span class="p">(</span><span
+                                            class="n">simpletwitter</span><span class="o">.</span><span class="n">read_tweets</span><span
+                                            class="p">(</span><span class="s2">&quot;python&quot;</span><span class="p">,</span> <span
+                                            class="n">tweet_count</span><span class="o">=</span><span
+                                            class="mi">2</span><span class="p">,</span> <span
+                                            class="n">api_key</span><span class="o">=</span><span class="s2">&quot;blabla&quot;</span><span
+                                            class="p">,</span> <span class="n">api_secret</span><span class="o">=</span><span
+                                            class="s2">&quot;huhuhu&quot;</span><span class="p">))</span>
+<span class="go">2</span>
+</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section" id="indices-and-tables">
+                            <h1>Indices and tables<a class="headerlink" href="#indices-and-tables"
+                                                     title="Permalink to this headline">¶</a></h1>
+                            <ul class="simple">
+                                <li><a class="reference internal" href="genindex.html"><span
+                                        class="std std-ref">Index</span></a></li>
+                                <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a>
+                                </li>
+                                <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <footer>
+
+
+                    <hr/>
+
+                    <div role="contentinfo">
+                        <p>
+                            &copy; Copyright 2016, Martin Chovanec.
+
+                        </p>
+                    </div>
+                    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a
+                        href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a
+                        href="https://readthedocs.org">Read the Docs</a>.
+
+                </footer>
+
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
+<script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT: './',
+        VERSION: '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE: true
+    };
+</script>
+<script type="text/javascript" src="_static/jquery.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+
+
+<script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(function () {
+        SphinxRtdTheme.StickyNav.enable();
+    });
+</script>
+
+
+</body>
+</html>

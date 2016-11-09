@@ -1,7 +1,7 @@
 .. SimpleTwitter documentation master file, created by
-sphinx-quickstart on Wed Nov  2 12:30:33 2016.
-You can adapt this file completely to your liking, but it should at least
-contain the root `toctree` directive.
+   sphinx-quickstart on Wed Nov  2 12:30:33 2016.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
 Welcome to SimpleTwitter's documentation!
 =========================================
@@ -9,7 +9,7 @@ Welcome to SimpleTwitter's documentation!
 Contents:
 
 .. contents::
-:local:
+   :local:
 
 =========================================
 What is SimpleTwitter
@@ -43,9 +43,7 @@ have a valid Twitter account at disposal.
 #. Take your Consumer API key and Consumer Secret from the Keys and Token Access tab.
 #. Place the keys in the following format to an ini file where no unauthorised person can access it. Keep in mind: your API key is like your password.
 
-The default file name is twitter_private.ini
-
-Example ``twiter_private.ini``::
+Example ``twitter_keys.ini``::
 
     [twitter]
     api_key = YOUR_KEY_HERE
@@ -93,26 +91,25 @@ API Documentation
 The following part documents the public API of the application:
 
 .. automodule:: simpletwitter
-:members:
+   :members:
 
 =========================================
 Examples
 =========================================
 
-.. testsetup:: *
-import json
+.. testsetup::
+    import json
     with open("statuses.json") as file:
        responses = json.load(file)
     class simpletwitter():
         def read_tweets(self, search, tweet_count=5, lang=None, session=None, api_key="", api_secret=""):
-            return responses["statuses"]
+            return responses
     simpletwitter = simpletwitter()
 
-.. testcode::
-len(simpletwitter.read_tweets("python", tweet_count=2, api_key="blabla", api_secret="huhuhu"))
+.. doctest::
 
-.. testoutput::
-2
+   >>> len(simpletwitter.read_tweets("python", tweet_count=2, api_key="blabla", api_secret="huhuhu"))
+   2
 
 
 
